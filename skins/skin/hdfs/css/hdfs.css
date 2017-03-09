@@ -1,0 +1,180 @@
+.body {
+	background-color: #f7f7f7;
+}
+/*dialog弹出框按钮的位置*/
+.ui-dialog-footer {
+	text-align: center;
+}
+/*头部信息设置*/
+.container, .list-top {
+	width: 98%;
+}
+.list-top {
+	padding-top: 7px;
+	margin-left: 1%;
+	height: 50px;
+	line-height: 50px;
+}
+.list-title {
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	color: #333;
+	display: inline;
+}
+.list-select {
+	float: left;
+}
+.list-select #clusterName {
+	font-size: 12px;
+	color: #4c4c4c;
+}
+.list-select label {
+	font-size: 12px;
+	color: #666;
+	font-family: "SimSun";
+}
+.btns{
+	font-size: 12px;
+	padding: 5px 13px;
+}
+.list-select, .input-group, .form-inline>.btn-group>.btn {
+	margin-right: 5px;
+}
+table.dataTable thead>tr>th {
+	text-align: left;
+	border-left: 0px;
+	background-color: #fff;
+}
+table.dataTable tbody>tr>td {
+	cursor: pointer;
+	text-align: left;
+}
+table.dataTable tbody>tr>td input[type=checkbox], table.dataTable thead>tr>th input[type=checkbox]{
+	margin-left: 30%;
+}
+.dropdown {
+    display: inline-block;
+}
+.fa.fa-caret-down {
+	margin-left: 5px;
+}
+.dropdown-menu {
+	min-width: 100px;
+}
+/*路径设置*/
+.file-path {
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 10px;
+}
+.breadcrumb {
+	display: inline;
+}
+#filepath:focus, #filepath:hover, #filepath:active {
+	cursor: pointer;
+}
+.input-path .btn {
+	padding: 1px 3%;
+	position: absolute;
+	border-left: 0px;
+	width: 9%;
+}
+.input-path #path-writer {
+	padding-left: 5px;
+}
+
+/*新建文件页面设置*/
+ .col-xs-8 .Validform_input {
+	width: 63%;
+} 
+.form-horizontal .form-group {
+	margin-top: 3%;
+}
+/*新建文件页面中的提示信息*/
+label.name-promp {
+	color: #999;
+	font-size: 12px;
+	margin-top: 10px;
+}
+div.name-promp {
+	color: #999;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+/*上传文件页面设置*/
+.upload-body {
+	margin-top: 15px;
+	padding-left: 15px;
+}
+.upload-ready {
+	background-color: #f7f7f7;
+	margin-top: 15px;
+}
+#upload-path {
+	color: #999;
+}
+.upload-file {
+	font-size: 12px;
+}
+.upload-address{
+	margin-left: 12px;
+}
+.upload-file .control-label {
+	color: rgb(153,153,153);
+	margin-left: 10px;
+}
+#rresult {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+.upload-progress {
+	background-color: #f7f7f7;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 14px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+}
+.progress{
+	height: 15px;
+	margin-bottom: 12px;
+}
+.progress-bar {
+	line-height: 15px;
+}
+#resBtn{
+	margin-top: 14px;
+}
+
+/*重命名样式设置*/
+.rename-body .form-group {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.rename-body {
+	margin-top: 3%;
+}
+#rename-path {
+	height: 30px;
+	line-height: 30px;
+}
+.col-md-8.col-xs-8 {
+	padding-left: 0;
+}
+.rename-save {
+	margin-top: 20px;
+}
+/*错误信息提示*/
+.errorMsg {
+	color: #c00;
+}
+#error {
+	text-align: center;
+	height: 20px;
+}
+/*dialog头部设置*/
+.ui-dialog-header, .ui-dialog-close {
+	color: #3e99ff;
+}

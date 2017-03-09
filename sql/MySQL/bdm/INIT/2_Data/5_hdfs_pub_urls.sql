@@ -1,0 +1,1 @@
+INSERT INTO `pub_urls` VALUES ('808081528cefe701528d1cff240011', 'bdm_hdfs_url', 'jsp/bdm/hdfs/fileSystem.jsp', 'bdm010401', 'bdm0104', 'http', '', 0);

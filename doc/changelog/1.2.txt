@@ -1,0 +1,4 @@
+#Version:1.2
+##Features
+* 1、支持Kerberos功能
+##Bug Fixes

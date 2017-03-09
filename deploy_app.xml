@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Framework" default="main" basedir=".">
+
+	<property file="deploy_app.properties" />
+	<property name="deploy.dir" value="${deploy.dir}" />
+	<property name="jar.name" value="${jar.name}" />
+
+	<target name="jar" description="生成jar包">
+		<jar destfile="${deploy.dir}/WEB-INF/lib/${jar.name}.jar">
+			<fileset dir="WEB-INF/classes" includes="com/inspur/idap/bdm/**" />
+		</jar>
+	</target>
+	
+	<target name="del" description="删除临时文件">
+		<delete dir="${deploy.dir}" includeEmptyDirs="true" includes="**"/>
+	</target>
+
+	<target name="copy" description="拷贝文件">
+		<!--拷贝jsp配置文件-->
+		<copy todir="${deploy.dir}/jsp">
+		    <fileset dir="jsp" includes="**" />
+		</copy>
+		<!--拷贝skin配置文件-->
+		<copy todir="${deploy.dir}/skins">
+		    <fileset dir="skins" includes="**" />
+		</copy>
+		<!--拷贝sql配置文件-->
+		<copy todir="${deploy.dir}/sql">
+		    <fileset dir="sql" includes="**" />
+		</copy>
+		<!--拷贝WEB-INF配置文件-->
+		<copy todir="${deploy.dir}/WEB-INF">
+		    <fileset dir="WEB-INF" includes="**" excludes="classes/**"/>
+		</copy>
+	</target>
+
+	<target name="main" description="==>发布程序,拷贝">
+		<antcall target="jar" />
+		<antcall target="copy" />
+		<!-- <antcall target="del" /> -->
+	</target>
+</project>
